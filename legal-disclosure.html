@@ -1,0 +1,123 @@
+[⚠️ Suspicious Content] <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>特定商取引法に基づく表記 | Joe’s Awakening Delight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f9f9f4;
+      color: #444;
+      line-height: 1.9;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .paragraph {
+      margin-bottom: 24px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+      margin: 0 10px;
+    }
+
+    .fadeup-joe {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fadeup-joe.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <h1 class="fadeup-joe">特定商取引法に基づく表記</h1>
+
+    <div class="paragraph fadeup-joe"><strong>販売者名</strong><br>Joe’s Awakening Delight</div>
+
+    <div class="paragraph fadeup-joe"><strong>運営統括責任者</strong><br>佐藤 譲</div>
+
+    <div class="paragraph fadeup-joe"><strong>所在地</strong><br>神奈川県相模原市南区（詳細は請求があれば遅滞なく開示いたします）</div>
+
+    <div class="paragraph fadeup-joe"><strong>電話番号</strong><br>電話番号はご請求いただければ、遅滞なく開示いたします。</div>
+
+    <div class="paragraph fadeup-joe"><strong>メールアドレス</strong><br>alchemist@satoyuzuru.jp</div>
+
+    <div class="paragraph fadeup-joe"><strong>販売URL</strong><br>https://www.satoyuzuru.jp/</div>
+
+    <div class="paragraph fadeup-joe"><strong>販売価格</strong><br>各サービスごとに該当ページに記載</div>
+
+    <div class="paragraph fadeup-joe"><strong>商品代金以外の必要料金</strong><br>銀行振込手数料・通信費等はお客様のご負担となります。</div>
+
+    <div class="paragraph fadeup-joe"><strong>引き渡し時期</strong><br>決済完了後、すみやかにご案内メールを送信いたします。</div>
+
+    <div class="paragraph fadeup-joe"><strong>お支払い方法</strong><br>クレジットカード決済（Stripe）、銀行振込（事前振込）</div>
+
+    <div class="paragraph fadeup-joe"><strong>返品・キャンセルについて</strong><br>商品の性質上、基本的に返品・返金はお受けしておりません。特別な事情がある場合は、個別にご相談ください。</div>
+
+    <div class="paragraph fadeup-joe"><strong>表現および再現性についての注意書き</strong><br>本サービスに示された表現や再現性には個人差があり、必ずしも利益や効果を保証するものではありません。</div>
+  </section>
+
+  <footer>
+    <div class="fadeup-joe">
+      <a href="/new-privacy-policy/">プライバシーポリシー</a>｜<a href="/legal-disclosure/">特定商取引法に基づく表記</a><br />
+      Copyright © 2025 Joe’s Awakening Delight
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, { threshold: 0.3 });
+
+      document.querySelectorAll('.fadeup-joe').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
